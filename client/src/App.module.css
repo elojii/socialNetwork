@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+:root {
+  --theme-color: #1565c0; /* За замовчуванням - синій */
+}
+
+.themeColor {
+  background-color: var(--theme-color);
+}
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  width: 80vw;
+  grid-template-areas:
+    "h h h"
+    "n m m";
+  grid-template-rows: 100px;
+  grid-template-columns: 2fr 10fr;
+}
+
+.header {
+  grid-area: h;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width:475px;
+}
+
+.navbar {
+  grid-area: n;
+  margin-top: 50px;
+  width: 10vw;
+  height: 65vh;
+}
+
+.loginScreen {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.backgroundForLogin {
+  background-color: #757ce8;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificationContainer {
+  position: relative;
+  display: inline-block; /* Для розташування елементів в одному ряду */
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -5px; /* Зміщення вгору, щоб кружечок був зверху */
+  right: -5px; /* Зміщення вправо, щоб кружечок був справа */
+  background-color: red; /* Колір кружечка */
+  color: white; /* Колір тексту (цифри) */
+  border-radius: 50%; /* Круглий кружечок */
+  width: 20px; /* Ширина кружечка */
+  height: 20px; /* Висота кружечка */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Розмір шрифту цифри */
+}
+
+input:focus {
+  outline: none;
+}

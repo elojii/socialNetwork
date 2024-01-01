@@ -1,0 +1,22 @@
+.navbar{
+    grid-area:n;
+    margin-top:50px;
+    width:10vw;
+    height:65vh;
+    background-color: var(--theme-color)
+}
+
+.navOptions {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    gap:30px;
+    text-decoration: none;
+    color: white;
+}
+
+.navOptions a {
+    text-decoration: none;
+    color: white;
+  }

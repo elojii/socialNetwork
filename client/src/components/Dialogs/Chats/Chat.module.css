@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  min-height: 65vh; /* Використовуйте min-height замість height, щоб контейнер міг збільшуватися при збільшенні вмісту */
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto; /* Замість фіксованої висоти */
+  z-index: 1;
+  padding: 10px; /* Додайте внутрішні відступи для елементу */
+}
+
+.chatContent {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-color);
+}
+
+.inputField {
+  margin-top: 10px; /* Додайте зовнішній відступ від верху */
+  height: auto; /* Замість фіксованої висоти */
+  width: 100%;
+  display: flex;
+}
+
+.inputField form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField input {
+  width: 100%;
+  margin-bottom: 10px; /* Додайте зовнішній відступ між інпутами */
+}
+
+
+.friendPfp {
+  height: 45px;
+  width: 45px;
+  background-size: contain;
+}
+
+.dialogName {
+  font-size: 25px;
+}
+
+.chatContent.reverse {
+  flex-direction: column-reverse; 
+}
+
+
+.inputStyle {
+  height: 15%;
+  width:99.2%;
+}
+
+.messageContent {
+  padding: 5px;
+  word-break: break-all;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 10px;
+  z-index:1
+}
+
+.messageContent:hover {
+  cursor:default;
+}
+
+.smallPfp {
+  width: 30px; /* Розмір для маленьких аватарок */
+  height: auto;
+  margin: 5px; /* Зміщення між аватаркою і повідомленням */
+  border-radius: 50%; /* Робимо аватарку круглою */
+}
+
+.messageDate {
+  font-size: 11px;
+  color: rgb(106, 106, 106);
+  text-align: right;
+}
+
+.flexEnd {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.flexStart {
+  align-self: flex-start;
+}
+.messageContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  height:auto;
+  margin: 2px;
+}
+
+.messageOptionsTable {
+  width: 75px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display:flex;
+  align-items: flex-start;
+}

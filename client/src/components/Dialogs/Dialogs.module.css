@@ -1,0 +1,78 @@
+.main {
+  grid-area: m;
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "f m m"
+    "f m m";
+  grid-template-rows: 5px 2fr;
+  grid-template-columns: 3fr 10fr;
+  text-decoration: none;
+}
+
+.friends {
+  grid-area: f;
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+  font-size:20px;
+  text-decoration: none;
+}
+
+.posts {
+  grid-area: m;
+  text-decoration: none;
+
+}
+
+.friendItem {
+  display:flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.friendPfp {
+  width: 75px;
+  height: 75px;
+  background-size: contain;
+  text-decoration: none;
+
+}
+
+.friendPfp::before {
+  content: "";
+  width: 30px; /* ширина кружка */
+  height: 30px; /* висота кружка */
+  background-color: green; /* колір кружка */
+  border-radius: 50%; /* робимо кружок */
+  position: absolute;
+  top: 5px; /* розміщуємо від верхнього краю */
+  right: 5px; /* розміщуємо від правого краю */
+  z-index: 1;
+  text-decoration: none;
+}
+
+.friendPfpOnline {
+  height: 75px;
+  width: 75px;
+  background-size: contain;
+  text-decoration: none;
+  
+}
+
+.chooseDialogText {
+  grid-area: m;
+  height:100%;
+  background-color: var(--theme-color);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none
+}
+
+.link {
+  text-decoration: none;
+}

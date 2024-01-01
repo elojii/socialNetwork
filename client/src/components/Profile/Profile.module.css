@@ -1,0 +1,186 @@
+.main {
+  grid-area: m;
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "p i i"
+  "f m m";
+  grid-template-rows: 220px 1fr;
+  grid-template-columns: 2fr 10fr;
+}
+.posts {
+  grid-area: m;
+  width: 97%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto; 
+}
+.friends {
+  grid-area: f;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  overflow-y: scroll;
+}
+.fontColor {
+  color: var(--theme-color)
+}
+.profilePicture {
+  grid-area: p;
+  width: 100%;
+  height: 200px;
+  display: block;
+  user-select: none;
+}
+
+.information {
+  grid-area: i;
+  width: 97%;
+  height: 90.8%;
+  background-color: rgb(230, 230, 230);
+  margin-left: auto;
+  object-fit:cover
+}
+
+.settingsContainer {
+  grid-area: m;
+  background-color: rgb(230, 230, 230);
+  margin-top: 50px;
+  width: 100%;
+}
+.centeringSettings {
+  width: 100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainForAllPosts {
+  grid-area: m;
+  background-color: rgb(230, 230, 230);
+  margin-top: 50px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.styleForPfp {
+  width: 100%;
+  height: 200px; /* Фіксована висота */
+  object-fit: cover; /* Заповнює контейнер, зберігаючи співвідношення сторін */
+}
+
+
+.infoAboutWhoPosted {
+  background-color:red;
+  display: flex;
+}
+
+.textStyle {
+  color: white;
+}
+
+
+
+.smallPfp {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.containerForPfps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 20px;
+  text-align: center;
+  margin-top:10px;
+  gap:10px;
+}
+
+
+.inputStyle {
+  width: 40vh;
+  height: 7vh;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.inputAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.createButtons {
+  display:flex;
+  
+}
+
+.createPostButton {
+  width:85%;
+  height:20px;
+}
+
+.chooseFileButton {
+  width:15%;
+  height:20px;
+
+}
+
+.pfpAndNamePosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: auto;
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center; /* Вирівнює елементи по вертикалі */
+  margin-right: 10px; /* Додати простір між аватаркою та ім'ям користувача */
+  margin-bottom: 5px; 
+}
+
+.styleForPostPfp {
+  width: 50px; /* Розмір аватарки користувача */
+  height: 50px;
+  border-radius: 50%; /* Зробити аватарку круглою */
+  margin-right: 10px; /* Додати простір між аватаркою та ім'ям користувача */
+}
+.pictureContent {
+  width: 40%;
+  height: auto;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
